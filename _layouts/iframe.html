@@ -1,20 +1,19 @@
----
-layout: default
----
-
 <!DOCTYPE html>
 <html>
-	<head>
-  	{% include head.html %}
-		<link rel="stylesheet" href="{{ "css/main.css" | prepend: site.baseurl }}">
-		<script type="text/javascript" src="{{ "js/main.js" | prepend: site.baseurl }}"></script>
-	</head>
-  <body>
-    {{ content }}
-    {% include footer.html %}
-  </body>
-</html>
-
+<head>
+  {% include head.html %}
+  <link type="text/css" rel="stylesheet" href="{{ site.github.url }}/lightslider/dist/css/lightslider.css" />
+  <script src="{{ site.github.url }}/lightslider/dist/js/lightslider.js"></script>
+  <style>
+    body {
+      margin: 0;
+      overflow-x: hidden;
+    }
+    img {
+      min-width: 100%
+    }
+  </style>
+</head>
 <body>
 {{ content }}
 <script type="text/javascript"> 
